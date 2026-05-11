@@ -1,4 +1,6 @@
 // je range la data du portfolio ici pour le séparer de l'ux
+const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 const portfolioContent = {
   en: {
     meta: {
@@ -27,7 +29,7 @@ const portfolioContent = {
         label: 'Contact',
         href: '#contact',
       },
-      profileImage: '/profile-placeholder.png',
+      profileImage: publicAsset('profile-placeholder.png'),
       stats: [
         { value: '6', label: 'Selected projects' },
         { value: '3', label: 'Core fields explored' },
@@ -281,7 +283,7 @@ const portfolioContent = {
         label: 'Me contacter',
         href: '#contact',
       },
-      profileImage: '/profile-placeholder.png',
+      profileImage: publicAsset('profile-placeholder.png'),
       stats: [
         { value: '6', label: 'Projets sélectionnés' },
         { value: '3', label: 'Domaines principaux explorés' },
